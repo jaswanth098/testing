@@ -15,4 +15,4 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-          cat .version | xargs -I% curl -H "Authorization: token $GITHUB_TOKEN" --data '{"tag_name": "test-'%'","target_commitish": "master","name": "test-'%'","draft": false,"prerelease": false}' https://api.github.com/repos/nudjur/deepql/releases
+          cat .version | xargs -I% curl -H "Authorization: token $GITHUB_TOKEN" --data '{"tag_name": "test-'%'","target_commitish": "master","name": "test-'%'","draft": false,"prerelease": false}' https://api.github.com/repos/jaswanth098/testing/releases
