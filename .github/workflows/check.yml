@@ -1,6 +1,6 @@
 name: machine spawn
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   release:
