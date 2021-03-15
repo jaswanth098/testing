@@ -3,7 +3,7 @@ name: machine spawn
 on: [push, pull_request]
 
 jobs:
-  release:
+  wait:
     runs-on: [self-hosted]
     name: testing
     steps:
