@@ -10,5 +10,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Building image
       run: |
-          sleep 2m
+          sleep 5m
           echo "testing complete"
