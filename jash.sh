@@ -1,2 +1,2 @@
-sleep 5m
+sleep 300
 echo "testing"
