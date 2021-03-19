@@ -1,14 +1,14 @@
 name: machine spawn
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
-  release:
+  wait:
     runs-on: [self-hosted]
     name: testing
     steps:
     - uses: actions/checkout@v1
     - name: Building image
       run: |
-          sleep 2m
+          bash jash.sh
           echo "testing complete"
